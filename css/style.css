@@ -134,7 +134,8 @@ summary::after {
 
 
 
-details[open] summary::after {
+
+[open] summary::after {
   transform: rotate(180deg);
 }
 
@@ -536,16 +537,13 @@ h2 {
   display: none;
 }
 
-.card:nth-child(2) .heart-m {
-  display: block;
-}
-
-.card:nth-child(3) .heart-m {
-  display: block;
+.heart-m:active {
   background-image: url("../images/Heart selected.svg");
 }
 
-
+.card:hover .heart-m {
+  display: block;
+}
 
 .card:hover {
   cursor: pointer;
